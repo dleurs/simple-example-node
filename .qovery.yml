@@ -4,6 +4,10 @@ application:
   project: getting-started
   publicly_accessible: true
   ram: 256MB
+databases:
+- type: postgresql # database type
+  version: "11.5" # database version
+  name: my-postgres-db # database name (must be unique)
 routers:
 - name: main
   routes:
